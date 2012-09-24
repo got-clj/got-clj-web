@@ -7,9 +7,6 @@
 (defn tweets-json []
   (json/read-json (slurp url)))
 
-(map #(->> %
-           :created_at
-           ))
 (defn tweets-frequencies
   []
   (frequencies

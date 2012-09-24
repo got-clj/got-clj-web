@@ -8,6 +8,9 @@
          (common/layout
           [:div.tweets
            [:h1 "Got Clj Tweets"]
+           [:div
+            [:h1 "Frequencies"]]
+
            [:ul
             (for [tweet (tw/fetch-new-tweets)]
               [:li [:h2 tweet]])]]))
